@@ -15,14 +15,14 @@ export const StyledIConContainer = styled.span`
 `;
 
 export const FlexContainer = styled.div<{
-  $flow: string;
+  $flow: 'row' | 'column';
   $size: 'tiny' | 'small' | 'medium' | 'large';
 }>`
   display: flex;
 
   gap: ${() => ClampComponent(900, 1250, 2, 2.5)};
 
-  flex-flow: ${prop => (prop.$flow === 'col' ? 'column' : 'row')};
+  flex-flow: ${prop => prop.$flow};
 
   gap: ${prop => prop.$size === 'large' && ClampComponent(900, 1250, 3, 3.5)};
   gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 2, 2.5)};
