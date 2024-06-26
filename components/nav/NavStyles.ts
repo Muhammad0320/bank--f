@@ -33,3 +33,18 @@ export const StyledSidebar = styled.aside`
 
   justify-content: space-between;
 `;
+
+
+
+ export const StyledTopNav = styled.div`
+   display: flex;
+
+   justify-content: space-between;
+
+   padding-inline: ${() => ClampComponent(900, 1250, 1.5, 2)};
+
+   padding-block: ${() => ClampComponent(900, 1250, 2, 2.5)};
+
+   align-items: center;
+ `;
+
