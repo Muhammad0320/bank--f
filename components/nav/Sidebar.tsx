@@ -1,10 +1,9 @@
-import { FC, ReactNode } from 'react';
-import { StyledSidebar } from './NavStyles';
-import NavLinks from './NavLinks';
-import NavLink from './NavLink';
 import { navData } from './NavData';
+import NavLink from './NavLink';
+import NavLinks from './NavLinks';
+import { StyledSidebar } from './NavStyles';
 
-const Sidebar: FC<{ children: ReactNode }> = ({ children }) => {
+const Sidebar = () => {
   return (
     <StyledSidebar>
       <NavLinks>
@@ -14,6 +13,11 @@ const Sidebar: FC<{ children: ReactNode }> = ({ children }) => {
             {item.content}{' '}
           </NavLink>
         ))}
+      </NavLinks>
+
+      <NavLinks>
+        <NavLink href="/settings"> Settings </NavLink>
+        <NavLink href="/logout"> Logout </NavLink>
       </NavLinks>
     </StyledSidebar>
   );
