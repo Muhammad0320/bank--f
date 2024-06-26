@@ -14,3 +14,10 @@ export const StyledH2 = styled.h2`
 
   font-size: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 `;
+
+
+export const Text = styled.p`
+  color: var(--black-color-light);
+
+  font-size: ${() => ClampComponent(900, 1250, 1.2, 1.5)};
+`;
