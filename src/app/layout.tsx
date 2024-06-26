@@ -23,14 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GlobalStyles>
-        <StyledBody className={lexend.className}>
-          <TopNav />
-          <Sidebar />
+      <GlobalStyles />
+      <StyledBody className={lexend.className}>
+        <TopNav />
+        <Sidebar />
 
-          <MainContainer>{children}</MainContainer>
-        </StyledBody>
-      </GlobalStyles>
+        <MainContainer>{children}</MainContainer>
+      </StyledBody>
     </html>
   );
 }
