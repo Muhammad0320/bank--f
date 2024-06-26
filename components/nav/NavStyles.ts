@@ -23,6 +23,9 @@ export const StyledNavLinks = styled.nav`
 `;
 
 export const StyledSidebar = styled.aside`
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+
   background-color: var(--text-color-dark);
 
   padding-block: ${() => ClampComponent(900, 1250, 3, 4.5)};
@@ -34,17 +37,19 @@ export const StyledSidebar = styled.aside`
   justify-content: space-between;
 `;
 
+export const StyledTopNav = styled.div`
+  grid-row: 1/ 2;
+  grid-column: 1 / -1;
+  z-index: 1;
 
+  display: flex;
 
- export const StyledTopNav = styled.div`
-   display: flex;
+  justify-content: space-between;
 
-   justify-content: space-between;
+  padding-inline: ${() => ClampComponent(900, 1250, 1.5, 2)};
 
-   padding-inline: ${() => ClampComponent(900, 1250, 1.5, 2)};
+  padding-block: ${() => ClampComponent(900, 1250, 2, 2.5)};
 
-   padding-block: ${() => ClampComponent(900, 1250, 2, 2.5)};
-
-   align-items: center;
- `;
+  align-items: center;
+`;
 
