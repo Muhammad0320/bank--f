@@ -1,4 +1,4 @@
-export const navObjects: { href: string; content: string }[] = [
+export const navData: { href: string; content: string }[] = [
   {
     href: '/dashboard',
     content: 'Dashboard',
