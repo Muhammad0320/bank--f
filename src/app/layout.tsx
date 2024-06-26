@@ -6,10 +6,10 @@ const lexend = Lexend({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    template: ' %s | YourBank',
-    default: ' Welcome to YourBank ',
+    template: '%s | YourBank',
+    default: 'Welcome to YourBank ',
   },
-  description: ' The best option for your financial safety',
+  description: 'The best option for your financial safety',
 };
 
 export default function RootLayout({
@@ -23,5 +23,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
