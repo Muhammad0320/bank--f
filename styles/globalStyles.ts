@@ -112,7 +112,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  background-color: var(--black-color);
+  background-color: var(--color-white-1);
   padding-top:2rem ;
   min-height: 100dvh;
   max-width: 100dvw;

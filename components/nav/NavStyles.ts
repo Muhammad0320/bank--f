@@ -41,8 +41,10 @@ export const StyledSidebar = styled.aside`
 
 export const StyledTopNav = styled.div`
   grid-row: 1/ 2;
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   z-index: 1;
+
+  background-color: var(--color-white-1);
 
   display: flex;
 
