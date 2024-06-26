@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Lexend } from 'next/font/google';
 import "./globals.css";
+import { MainContainer, StyledBody } from '../../styles/RootStyles';
+import TopNav from '../../components/nav/TopNav';
+import Sidebar from '../../components/nav/Sidebar';
 
 const lexend = Lexend({ subsets: ['latin'] });
 
@@ -19,7 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <StyledBody className={lexend.className}>
+        <TopNav />
+        <Sidebar />
+
+        <MainContainer>{children}</MainContainer>
+      </StyledBody>
     </html>
   );
 }
