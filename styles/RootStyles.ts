@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 
 export const StyledBody = styled.body`
@@ -8,8 +10,7 @@ export const StyledBody = styled.body`
   grid-template-rows: auto 1fr;
 `;
 
-
-export const ChildrenContainer = styled.main`
+export const MainContainer = styled.main`
   grid-column: 2 / -1;
   grid-row: 2 / -1;
 `;

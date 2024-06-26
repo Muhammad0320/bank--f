@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
@@ -52,4 +54,3 @@ export const StyledTopNav = styled.div`
 
   align-items: center;
 `;
-

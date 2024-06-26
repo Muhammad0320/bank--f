@@ -1,4 +1,6 @@
-import styled, { css } from 'styled-components';
+'use client';
+
+import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
 export const StyledIConContainer = styled.span`
@@ -21,9 +23,7 @@ export const FlexContainer = styled.div<{
   display: flex;
 
   gap: ${() => ClampComponent(900, 1250, 2, 2.5)};
-
   flex-flow: ${prop => prop.$flow};
-
   gap: ${prop => prop.$size === 'large' && ClampComponent(900, 1250, 3, 3.5)};
   gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 2, 2.5)};
   gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 1.5, 2)};
