@@ -25,8 +25,7 @@ export const FlexContainer = styled.div<{
   gap: ${() => ClampComponent(900, 1250, 2, 2.5)};
   flex-flow: ${prop => prop.$flow};
   gap: ${prop => prop.$size === 'large' && ClampComponent(900, 1250, 3, 3.5)};
-  gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 2, 2.5)};
-  gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 1.5, 2)};
-  gap: ${prop =>
-    prop.$size === 'medium' && ClampComponent(900, 1250, 0.8, 1.2)};
+  gap: ${prop => prop.$size === 'medium' && ClampComponent(900, 1250, 2, 2.5)};
+  gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 1.5, 2)};
+  gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.8, 1.2)};
 `;

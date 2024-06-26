@@ -6,7 +6,7 @@ import { StyledTopNav } from './NavStyles';
 const TopNav = () => {
   return (
     <StyledTopNav>
-      <FlexContainer $flow="col" $size="small">
+      <FlexContainer $flow="column" $size="tiny">
         <StyledH2> Hey, Muhammad 👋 </StyledH2>
         <Text> Welcome back to YourBank </Text>
       </FlexContainer>
