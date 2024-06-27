@@ -61,3 +61,4 @@ export const StyledInput = styled.input`
     border: 1px solid var(--primary-gradient);
   }
 `;  
+
