@@ -27,8 +27,6 @@ export const StyledH3 = styled.h3`
 `;
 
 
-
-
 export const Text = styled.p`
   color: var(--black-color-light);
 

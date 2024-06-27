@@ -11,7 +11,7 @@ const Input: FC<InputType> = ({ label, id, ...props }) => {
     <FlexContainer $flow="column" $size="tiny">
       <label htmlFor={id}> {label}</label>
 
-      <StyledInput id={id} {...props} />
+      <StyledInput id={id} {...props} name={id} />
     </FlexContainer>
   );
 };
