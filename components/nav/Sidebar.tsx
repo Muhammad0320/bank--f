@@ -19,11 +19,11 @@ const Sidebar = () => {
       </NavLinks>
 
       <NavLinks>
-        <NavLink icon={HiOutlineCog} href="/settings">
+        <NavLink icon={<HiOutlineCog />} href="/settings">
           {' '}
           Settings{' '}
         </NavLink>
-        <NavLink icon={GoSignOut} href="/logout">
+        <NavLink icon={<GoSignOut />} href="/logout">
           {' '}
           Logout{' '}
         </NavLink>
