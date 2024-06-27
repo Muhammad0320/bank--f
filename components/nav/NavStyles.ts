@@ -40,6 +40,8 @@ export const StyledSidebar = styled.aside`
 
   padding-block: ${() => ClampComponent(900, 1250, 3, 4.5)};
 
+  padding-inline: ${() => ClampComponent(900, 1250, 3, 5)};
+
   display: flex;
 
   flex-flow: column;
