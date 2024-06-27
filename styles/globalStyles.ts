@@ -111,7 +111,6 @@ body {
   padding: 0;
   color: var(--text-color);
   background-color: var(--color-white-1);
-  padding-top:2rem ;
   min-height: 100dvh;
   max-width: 100dvw;
   overflow-x: hidden;

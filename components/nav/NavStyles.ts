@@ -60,9 +60,9 @@ export const StyledTopNav = styled.div`
 
   justify-content: space-between;
 
-  padding-inline: ${() => ClampComponent(900, 1250, 1.5, 2)};
+  /* padding-inline: ${() => ClampComponent(900, 1250, 1.5, 2)}; */
 
-  padding-block: ${() => ClampComponent(900, 1250, 2, 2.5)};
+  padding: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 
   align-items: center;
 `;
