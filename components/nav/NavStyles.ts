@@ -34,7 +34,7 @@ export const StyledNavLinks = styled.nav`
 
 export const StyledSidebar = styled.aside`
   grid-column: 1 / 1;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
 
   background-color: var(--text-color-dark);
 
@@ -51,7 +51,7 @@ export const StyledSidebar = styled.aside`
 
 export const StyledTopNav = styled.div`
   grid-row: 1/ 2;
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
   z-index: 1;
 
   background-color: var(--color-white-1);
