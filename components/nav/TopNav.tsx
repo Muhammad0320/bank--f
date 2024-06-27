@@ -13,7 +13,7 @@ const TopNav = () => {
           <Image src={logo} alt="YourBank logo" />
         </ImageContainer>
 
-        <FlexContainer $flow="column" $size="tiny">
+        <FlexContainer $flow="column" $size="unset">
           <StyledH2> Hey, Muhammad 👋 </StyledH2>
           <Text> Welcome back to YourBank </Text>
         </FlexContainer>

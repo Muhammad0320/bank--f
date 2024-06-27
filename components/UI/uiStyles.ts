@@ -24,7 +24,7 @@ export const StyledIConContainer = styled.span`
 
 export const FlexContainer = styled.div<{
   $flow: 'row' | 'column';
-  $size: 'tiny' | 'small' | 'medium' | 'large';
+  $size: 'tiny' | 'small' | 'medium' | 'large' | 'unset';
 }>`
   display: flex;
 
@@ -34,6 +34,7 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'medium' && ClampComponent(900, 1250, 2, 2.5)};
   gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 1.5, 2)};
   gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.8, 1.2)};
+  gap: ${prop => prop.$size === 'unset' && '0'};
 `;
 
 
