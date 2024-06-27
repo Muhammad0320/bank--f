@@ -35,3 +35,12 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 1.5, 2)};
   gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.8, 1.2)};
 `;
+
+
+
+export const ImageContainer = styled.div`
+  position: relative;
+
+  height: fit-content;
+  width: auto;
+`;
