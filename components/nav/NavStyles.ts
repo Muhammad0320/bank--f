@@ -6,6 +6,10 @@ import { ClampComponent } from '../../styles/clampBuilder';
 export const StyledNavLink = styled.span`
   display: flex;
 
+  justify-content: center;
+
+  align-items: center;
+
   gap: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 
   & > a {
@@ -17,12 +21,16 @@ export const StyledNavLink = styled.span`
 export const StyledNavLinks = styled.nav`
   display: flex;
 
+  /* justify-content: center; */
+
   flex-flow: column;
 
   gap: ${() => ClampComponent(900, 1250, 1.5, 3)};
 
   color: var(--primary-color);
 `;
+
+
 
 export const StyledSidebar = styled.aside`
   grid-column: 1 / 1;

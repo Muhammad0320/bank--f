@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GlobalStyles />
-      <StyledBody className={lexend.className}>
+      <StyledBody>
         <TopNav />
         <Sidebar />
 
