@@ -37,8 +37,6 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'unset' && '0'};
 `;
 
-
-
 export const ImageContainer = styled.div`
   position: relative;
 
