@@ -58,8 +58,6 @@ inherits: false;
     --color-white-2: #f1f1f1 ;
     --color-white-3: rgba(255, 255, 255, .4);
 
-
-    
     --color-gradient-dark: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .25));
     --color-gradient-dark-muted: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .10));
     --color-gradient-dark-1: linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .50));
@@ -73,7 +71,7 @@ inherits: false;
 
 
     --box-shadow-light: 0 5px 5px 2px rgba(16, 16, 16, 0.2); 
-  
+
     --box-shadow-light-2: 0 5px 5px 3px rgba(16, 16, 16, 0.1); 
     --box-shadow-dark: 0 5px 10px 6px rgba(16, 16, 16, 0.3); 
     --box-shadow-dark-2: 0 5px 8px 4px rgba(16, 16, 16, 0.25); 
