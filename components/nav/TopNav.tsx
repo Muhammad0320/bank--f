@@ -5,6 +5,10 @@ import logo from '/public/assets/images/logo.png';
 import { StyledTopNav } from './NavStyles';
 import Image from 'next/image';
 
+import { IoNotificationsOutline } from 'react-icons/io5';
+import { IoMoonOutline } from 'react-icons/io5';
+import { IoSunnyOutline } from 'react-icons/io5';
+
 const TopNav = () => {
   return (
     <StyledTopNav>
@@ -20,8 +24,14 @@ const TopNav = () => {
       </FlexContainer>
 
       <FlexContainer $flow="row" $size="small">
-        <IconContainer> N </IconContainer>
-        <IconContainer> T </IconContainer>
+        <IconContainer>
+          {' '}
+          <IoNotificationsOutline />{' '}
+        </IconContainer>
+        <IconContainer>
+          {' '}
+          <IoSunnyOutline />{' '}
+        </IconContainer>
         <IconContainer> M </IconContainer>
       </FlexContainer>
     </StyledTopNav>
