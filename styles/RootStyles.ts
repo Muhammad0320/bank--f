@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { ClampComponent } from './clampBuilder';
 
 export const StyledBody = styled.body`
   margin: 0;
@@ -16,4 +17,6 @@ export const StyledBody = styled.body`
 export const MainContainer = styled.main`
   grid-column: 2 / -1;
   grid-row: 2 / -1;
+
+  padding: ${() => ClampComponent(900, 1250, 2, 3)};
 `;
