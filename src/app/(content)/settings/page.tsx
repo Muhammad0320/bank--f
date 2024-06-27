@@ -1,7 +1,12 @@
+import { Metadata } from 'next';
 import Input from '../../../../components/UI/Input';
 import { SectionStyle } from '../../../../components/UI/SectionStyle';
 import { StyledH1, StyledH3 } from '../../../../components/UI/Text';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
+
+export const metadata: Metadata = {
+  title: 'Settings page',
+};
 
 const SettingsPage = () => {
   return (
