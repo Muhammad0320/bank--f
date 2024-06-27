@@ -43,3 +43,19 @@ export const ImageContainer = styled.div`
   height: fit-content;
   width: auto;
 `;
+
+export const StyledInput = styled.input`
+  border: 1px solid var(--text-color-dark);
+
+  padding-inline: ${() => ClampComponent(900, 1250, 1.2, 2.4)};
+
+  padding-block: ${() => ClampComponent(900, 1250, 1, 2)};
+
+  background-color: transparent;
+
+  & :focus {
+    outline: transparent;
+
+    border: 1px solid var(--primary-gradient);
+  }
+`;  
