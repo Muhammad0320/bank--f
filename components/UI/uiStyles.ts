@@ -53,6 +53,8 @@ export const StyledInput = styled.input`
 
   background-color: transparent;
 
+  border-radius: ${() => ClampComponent(900, 1250, 1.2, 2)};
+
   & :focus {
     outline: transparent;
 
