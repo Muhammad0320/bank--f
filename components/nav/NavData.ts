@@ -1,13 +1,9 @@
-import { type ReactNode } from 'react';
-
 import { MdOutlineAccountBalance } from 'react-icons/md';
 import { TbReportAnalytics } from 'react-icons/tb';
 
-import { GoSignOut } from 'react-icons/go';
 import { LuLayoutDashboard } from 'react-icons/lu';
 import { IoMoonOutline } from 'react-icons/io5';
 import { IoSunnyOutline } from 'react-icons/io5';
-import { HiOutlineCog } from 'react-icons/hi';
 import { CiCreditCard2 } from 'react-icons/ci';
 import { GrTransaction } from 'react-icons/gr';
 import { IconType } from 'react-icons';
