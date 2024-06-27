@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
-export const StyledNavLink = styled.span`
+export const NavLinkContainer = styled.span`
   display: flex;
 
   justify-content: center;
@@ -12,10 +12,10 @@ export const StyledNavLink = styled.span`
 
   gap: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 
-  & > a {
-    font-size: ${() => ClampComponent(900, 1250, 1, 2)};
-    color: var(--black-color);
-  }
+  font-size: ${() => ClampComponent(900, 1250, 1, 2)};
+  color: var(--black-color);
+  /* & > a {
+  } */
 `;
 
 export const StyledNavLinks = styled.nav`
