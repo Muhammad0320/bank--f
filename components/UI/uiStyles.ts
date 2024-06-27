@@ -7,6 +7,12 @@ export const StyledIConContainer = styled.span`
   height: ${() => ClampComponent(900, 1250, 3, 4.5)};
   width: ${() => ClampComponent(900, 1250, 3, 4.5)};
 
+  background: var(--primary-gradient);
+
+  text-transform: uppercase;
+
+  font-size: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
+
   display: flex;
 
   justify-content: center;
