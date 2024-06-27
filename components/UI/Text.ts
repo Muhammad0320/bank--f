@@ -9,6 +9,7 @@ export const StyledH1 = styled.h1`
   font-size: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
 `;
 
+
 export const StyledH2 = styled.h2`
   color: var(--black-color);
 
@@ -16,6 +17,17 @@ export const StyledH2 = styled.h2`
 
   font-size: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 `;
+
+export const StyledH3 = styled.h3`
+  color: var(--black-color);
+
+  font-weight: 500;
+
+  font-size: ${() => ClampComponent(900, 1250, 1.2, 2)};
+`;
+
+
+
 
 export const Text = styled.p`
   color: var(--black-color-light);
