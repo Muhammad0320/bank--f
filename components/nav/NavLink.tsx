@@ -11,7 +11,6 @@ const NavLink: FC<NavLinkType> = ({ children, href, icon }) => {
   return (
     <NavLinkContainer>
       {icon}
-
       <Link href={href}> {children} </Link>
     </NavLinkContainer>
   );
