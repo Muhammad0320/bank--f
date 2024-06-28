@@ -58,6 +58,30 @@ const SettingsPage = () => {
             />
           </FlexContainer>
         </FlexContainer>
+
+        {/*  Card settings  */}
+
+        <FlexContainer $flow="column" $size="small">
+          <StyledH3>Billing and Card settings</StyledH3>
+
+          <FlexContainer $flow="row" $size="small">
+            <Input label="Billing Address" id="billingAddress" type="text" />
+            <Input label="Daily Card Limit" id="daily" type="text" />
+            <Input label="Weekly Card Limit" id="weekly" type="text" />
+
+            <Input label="Monthly Card Limit" id="monthly" type="text" />
+          </FlexContainer>
+        </FlexContainer>
+
+        {/*  Notification settings.  */}
+
+        <FlexContainer $flow="column" $size="small">
+          <StyledH3>Notification Settings</StyledH3>
+
+          <FlexContainer $flow="row" $size="small">
+            <Text> Signin and Signout email notification </Text>
+          </FlexContainer>
+        </FlexContainer>
       </FlexContainer>
     </SectionStyle>
   );
