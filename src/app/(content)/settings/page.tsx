@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Input from '../../../../components/UI/Input';
 import { SectionStyle } from '../../../../components/UI/SectionStyle';
-import { StyledH1, StyledH3 } from '../../../../components/UI/Text';
+import { StyledH1, StyledH3, Text } from '../../../../components/UI/Text';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
 
 export const metadata: Metadata = {
@@ -27,7 +27,10 @@ const SettingsPage = () => {
         {/*  For Account settings */}
         <FlexContainer $flow="column" $size="small">
           <StyledH3> Account Settings </StyledH3>
-          <Input label="Account Tier" id="name" type="text" />
+
+          <Text> Disply Account Number </Text>
+          <Text> Disply Account Balace </Text>
+          <Text> Disply Account Type </Text>
         </FlexContainer>
       </FlexContainer>
     </SectionStyle>
