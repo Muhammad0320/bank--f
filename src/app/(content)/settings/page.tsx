@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Input from '../../../../components/UI/Input';
+import { FlexContainer } from '../../../../components/UI/uiStyles';
 import { SectionStyle } from '../../../../components/UI/SectionStyle';
 import { StyledH1, StyledH3, Text } from '../../../../components/UI/Text';
-import { FlexContainer } from '../../../../components/UI/uiStyles';
 
 export const metadata: Metadata = {
   title: 'Settings page',
@@ -18,9 +18,13 @@ const SettingsPage = () => {
         <FlexContainer $flow="column" $size="small">
           <StyledH3> Profile Settings </StyledH3>
           <FlexContainer $flow="row" $size="small">
-            <Input label="Email" id="name" type="text" />
-            <Input label="Your email address" id="email" type="email" />
             <Input label="Avatar" id="avatar" type="file" />
+            <Input label="Your name" id="name" type="text" />
+            <Input label="Your email address" id="email" type="email" />
+            <Input label="Your Phone number" id="phone" type="number" />
+
+            <Input label="Your Contact address" id="address" type="text" />
+            <Input label="Date of birth" id="dob" type="date" />
           </FlexContainer>
         </FlexContainer>
 
