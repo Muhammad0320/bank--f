@@ -43,6 +43,23 @@ const Tracsaction = () => {
             <Text $size="small"> 12/06/2024 </Text>
           </FlexContainer>
         </TxnCard>
+        <TxnCard $flow="row" $size="small">
+          <AvatarContainer> I </AvatarContainer>
+
+          <FlexContainer
+            $flow="column"
+            $size="tiny"
+            style={{ marginRight: 'auto' }}
+          >
+            <Text> Muhammad Awwal </Text>
+            <Text $size="small"> Shit money </Text>
+          </FlexContainer>
+
+          <FlexContainer $flow="column" $size="tiny">
+            <Text> - $13.00 </Text>
+            <Text $size="small"> 12/06/2024 </Text>
+          </FlexContainer>
+        </TxnCard>
       </TxnHistory>
     </TransactionContainer>
   );
