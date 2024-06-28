@@ -65,3 +65,14 @@ export const StyledInput = styled.input`
   }
 `;  
 
+
+
+export const AvatarContainer = styled.div`
+  position: relative;
+
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 50%;
+`;
+

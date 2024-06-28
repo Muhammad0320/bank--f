@@ -38,3 +38,5 @@ export const Text = styled.p<{ $size?: 'small' | 'large' }>`
       font-size: 400;
     `}
 `;
+
+
