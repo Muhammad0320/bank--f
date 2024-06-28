@@ -23,9 +23,7 @@ export const TransactionContainer = styled(MainContainer)`
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
 
     display: grid;
-    grid-auto-flow: row;
-
-    grid-auto-rows: auto;
+    grid-template-rows: auto 1fr;
 
     gap: ${() => ClampComponent(900, 1250, 1.2, 2)};
   }
@@ -61,3 +59,6 @@ export const TxnCard = styled(FlexContainer)`
   border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
 `;
 
+export const TxnContentContainer = styled.div`
+  background-color: var(--text-color-dark);
+`;

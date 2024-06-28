@@ -1,5 +1,5 @@
 import IconContainer from '../../../../components/UI/IconContainer';
-import { StyledH3, Text } from '../../../../components/UI/Text';
+import { StyledH2, StyledH3, Text } from '../../../../components/UI/Text';
 import {
   AvatarContainer,
   FlexContainer,
@@ -9,19 +9,30 @@ import {
   TxnAnalysis,
   TxnCard,
   TxnCardContainer,
+  TxnContentContainer,
   TxnHistory,
 } from './style';
 
 const Tracsaction = () => {
   return (
     <TransactionContainer>
-      <TxnCardContainer></TxnCardContainer>
+      <StyledH2> Transaction </StyledH2>
 
-      <TxnAnalysis></TxnAnalysis>
+      <TxnCardContainer>
+        <StyledH3> Transfer </StyledH3>
+
+        <TxnContentContainer>Shit !!!!</TxnContentContainer>
+      </TxnCardContainer>
+
+      <TxnAnalysis>
+        <StyledH3> Analysis </StyledH3>
+
+        <TxnContentContainer>Shit !!!!</TxnContentContainer>
+      </TxnAnalysis>
 
       <TxnHistory>
         <FlexContainer $flow="row" $size="btw">
-          <StyledH3> Transaction History </StyledH3>
+          <StyledH3> History </StyledH3>
 
           <IconContainer> F </IconContainer>
         </FlexContainer>
