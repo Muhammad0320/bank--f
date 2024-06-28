@@ -7,8 +7,8 @@ import { ClampComponent } from '../../../../styles/clampBuilder';
 export const TransactionContainer = styled(MainContainer)`
   display: grid;
 
-  grid-template-columns: auto 1.2fr 1fr;
-  grid-template-rows: 1.2fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: auto 1.2fr 1fr;
 
   gap: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
 
@@ -23,4 +23,17 @@ export const TransactionContainer = styled(MainContainer)`
   }
 `;
 
+export const TxnCardContainer = styled.section`
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+`;
 
+export const TxnAnalysis = styled.section`
+  grid-row: 3 / -1;
+  grid-column: 1 / 2;
+`;
+
+export const TxnHistory = styled.section`
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+`;
