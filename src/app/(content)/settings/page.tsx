@@ -3,6 +3,7 @@ import Input from '../../../../components/UI/Input';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
 import { SectionStyle } from '../../../../components/UI/SectionStyle';
 import { StyledH1, StyledH3, Text } from '../../../../components/UI/Text';
+import TextArea from '../../../../components/UI/TextArea';
 
 export const metadata: Metadata = {
   title: 'Settings page',
@@ -85,6 +86,21 @@ const SettingsPage = () => {
           <FlexContainer $flow="row" $size="small">
             <Text> Signin and Signout email notification </Text>
           </FlexContainer>
+        </FlexContainer>
+
+        <FlexContainer $flow="column" $size="small">
+          <StyledH3> Support and Feedback </StyledH3>
+
+          <TextArea
+            label="Contact support"
+            id="support"
+            placeholder="Your coumplaint to customer support..."
+          />
+          <TextArea
+            label="Submit Feedback"
+            id="feedback"
+            placeholder="Your Observation about our website and service"
+          />
         </FlexContainer>
       </FlexContainer>
     </SectionStyle>
