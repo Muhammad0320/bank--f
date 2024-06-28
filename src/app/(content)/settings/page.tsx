@@ -17,9 +17,11 @@ const SettingsPage = () => {
         {/*  For the Profile settings  */}
         <FlexContainer $flow="column" $size="small">
           <StyledH3> Profile Settings </StyledH3>
-          <Input label="Email" id="name" type="text" />
-          <Input label="Your email address" id="email" type="email" />
-          <Input label="Avatar" id="avatar" type="file" />
+          <FlexContainer $flow="row" $size="small">
+            <Input label="Email" id="name" type="text" />
+            <Input label="Your email address" id="email" type="email" />
+            <Input label="Avatar" id="avatar" type="file" />
+          </FlexContainer>
         </FlexContainer>
 
         {/*  For Account settings */}
