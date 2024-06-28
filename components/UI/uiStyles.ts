@@ -70,6 +70,8 @@ export const StyledInput = styled.input`
 export const AvatarContainer = styled.div`
   position: relative;
 
+  background-color: var(--text-color-dark);
+
   width: 3rem;
   height: 3rem;
 

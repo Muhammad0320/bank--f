@@ -32,6 +32,9 @@ export const TxnCardContainer = styled.section`
 export const TxnAnalysis = styled.section`
   grid-row: 3 / -1;
   grid-column: 1 / 2;
+  display: flex;
+  flex-flow: column;
+  gap: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
 `;
 
 export const TxnHistory = styled.section`
