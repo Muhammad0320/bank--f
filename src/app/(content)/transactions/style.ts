@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { MainContainer } from '../../../../styles/RootStyles';
 import { ClampComponent } from '../../../../styles/clampBuilder';
+import { FlexContainer } from '../../../../components/UI/uiStyles';
 
 export const TransactionContainer = styled(MainContainer)`
   display: grid;
@@ -38,7 +39,7 @@ export const TxnHistory = styled.section`
   grid-column: 2 / -1;
 `;
 
-export const TxnCard = styled.div`
+export const TxnCard = styled(FlexContainer)`
   padding: ${() => ClampComponent(900, 1250, 0.8, 1.2)};
 
   border: 1px solid var(--border-color);
