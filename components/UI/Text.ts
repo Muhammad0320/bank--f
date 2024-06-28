@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
 export const StyledH1 = styled.h1`
@@ -8,7 +8,6 @@ export const StyledH1 = styled.h1`
   font-weight: 600;
   font-size: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
 `;
-
 
 export const StyledH2 = styled.h2`
   color: var(--black-color);
@@ -26,9 +25,16 @@ export const StyledH3 = styled.h3`
   font-size: ${() => ClampComponent(900, 1250, 1.2, 2)};
 `;
 
-
-export const Text = styled.p`
+export const Text = styled.p<{ $size?: 'small' | 'large' }>`
   color: var(--black-color-light);
 
   font-size: ${() => ClampComponent(900, 1250, 1.2, 1.5)};
+
+  ${props =>
+    props.$size === 'small' &&
+    css`
+      font-size: ${() => ClampComponent(900, 1250, 0.6, 1)};
+      color: var(--card-color);
+      font-size: 400;
+    `}
 `;
