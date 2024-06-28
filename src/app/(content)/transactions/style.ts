@@ -15,7 +15,7 @@ export const TransactionContainer = styled(MainContainer)`
   & > * {
     box-shadow: var(--box-shadow-light);
 
-    border: 1px solid var(--card-color);
+    border: 1px solid var(--border-color);
 
     padding: ${() => ClampComponent(900, 1250, 1, 2)};
 
@@ -37,3 +37,12 @@ export const TxnHistory = styled.section`
   grid-row: 2 / -1;
   grid-column: 2 / -1;
 `;
+
+export const TxnCard = styled.div`
+  padding: ${() => ClampComponent(900, 1250, 0.8, 1.2)};
+
+  border: 1px solid var(--border-color);
+
+  border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+`;
+
