@@ -21,6 +21,17 @@ export const TransactionContainer = styled(MainContainer)`
     padding: ${() => ClampComponent(900, 1250, 1, 2)};
 
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    display: grid;
+    grid-auto-flow: row;
+
+    grid-auto-rows: auto;
+
+    gap: ${() => ClampComponent(900, 1250, 1.2, 2)};
+  }
+
+  & > h2 {
+    grid-row: 1 / 2;
   }
 `;
 
