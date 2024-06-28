@@ -18,5 +18,6 @@ export const MainContainer = styled.main`
   grid-column: 2 / -1;
   grid-row: 2 / -1;
 
-  padding: ${() => ClampComponent(900, 1250, 2, 3)};
+  padding-block: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
+  padding-inline: ${() => ClampComponent(900, 1250, 2, 3)};
 `;
