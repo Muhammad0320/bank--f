@@ -14,7 +14,7 @@ export const navData: { href: string; content: string; icon: ReactNode }[] = [
   },
 
   {
-    href: '/transaction',
+    href: '/transactions',
     content: 'Tracsaction',
     icon: `<${GrTransaction} />`,
   },
