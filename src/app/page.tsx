@@ -3,8 +3,10 @@ import {
   BalaceSummary,
   DashBoardContainer,
   FirstDashBoardRow,
+  FlashTransaction,
   LastDashboardRow,
   MonthlyCardContainer,
+  TopBeneficiary,
 } from './style';
 import { StyledH3, Text } from '../../components/UI/Text';
 import { FlexContainer } from '../../components/UI/uiStyles';
@@ -48,9 +50,19 @@ const Page: React.FC = () => {
             <IconContainer> PB </IconContainer>
           </FlexContainer>
         </MonthlyCardContainer>
+
+        <TopBeneficiary $flow="column" $size="small">
+          <StyledH3> Top Beneficiaries </StyledH3>
+          <div> Beneficiary container </div>
+        </TopBeneficiary>
       </FirstDashBoardRow>
 
-      <LastDashboardRow></LastDashboardRow>
+      <LastDashboardRow>
+        <FlashTransaction $flow="column" $size="small">
+          <StyledH3> Flash Transfer </StyledH3>
+          <div> Transfer content </div>
+        </FlashTransaction>
+      </LastDashboardRow>
     </DashBoardContainer>
   );
 };
