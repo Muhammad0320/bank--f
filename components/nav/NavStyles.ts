@@ -11,7 +11,7 @@ export const NavLinkContainer = styled(Link)`
 
   /* width: 100%; */
 
-  padding-block: ${() => ClampComponent(900, 1250, 1.5, 3)};
+  padding-block: ${() => ClampComponent(900, 1250, 1, 2)};
 
   align-items: center;
 
