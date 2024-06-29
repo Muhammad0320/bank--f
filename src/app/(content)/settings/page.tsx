@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: 'Settings page',
 };
 
+
+
 const SettingsPage = () => {
   return (
     <SectionStyle>

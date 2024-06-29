@@ -33,7 +33,7 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'large' && ClampComponent(900, 1250, 3, 3.5)};
   gap: ${prop => prop.$size === 'medium' && ClampComponent(900, 1250, 2, 2.5)};
   gap: ${prop => prop.$size === 'small' && ClampComponent(900, 1250, 1.5, 2)};
-  gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.8, 1.2)};
+  gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.5, 1)};
   gap: ${prop => prop.$size === 'unset' && '0'};
   justify-content: ${prop => prop.$size === 'btw' && 'space-between'};
   align-items: ${prop => prop.$size === 'btw' && 'center'};
@@ -68,6 +68,9 @@ export const StyledInput = styled.input`
 
 export const AvatarContainer = styled.div`
   position: relative;
+  margin-block: auto;
+  display: grid;
+  place-content: center;
 
   width: 3rem;
   height: 3rem;
