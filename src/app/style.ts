@@ -29,6 +29,8 @@ export const FirstDashBoardRow = styled.section`
   & > * {
     box-shadow: var(--box-shadow-light);
 
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
     border-radius: ${() => ClampComponent(900, 1250, 1.1, 1.5)};
   }
 `;
@@ -57,6 +59,12 @@ export const BalaceSummary = styled(FlexContainer)`
 export const MonthlyCardContainer = styled(FlexContainer)`
   grid-row: 1 / 3;
   grid-column: 2 / 3;
+
+  padding: 0;
+
+  & > * {
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
 `;
 
 export const TopBeneficiary = styled(FlexContainer)`
