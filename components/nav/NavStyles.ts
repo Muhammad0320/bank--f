@@ -9,6 +9,10 @@ export const NavLinkContainer = styled(Link)`
 
   justify-content: center;
 
+  /* width: 100%; */
+
+  padding-block: ${() => ClampComponent(900, 1250, 1.5, 3)};
+
   align-items: center;
 
   gap: ${() => ClampComponent(900, 1250, 1.5, 2.5)};
@@ -26,7 +30,9 @@ export const StyledNavLinks = styled.nav`
 
   flex-flow: column;
 
-  gap: ${() => ClampComponent(900, 1250, 1.5, 3)};
+  align-items: flex-start;
+
+  /* gap: ${() => ClampComponent(900, 1250, 1.5, 3)}; */
 
   color: var(--primary-color);
 `;
