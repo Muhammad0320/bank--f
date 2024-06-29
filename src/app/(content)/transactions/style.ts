@@ -63,4 +63,33 @@ export const TxnContentContainer = styled.div`
   background-color: var(--text-color-dark);
 `;
 
-export const TxnModeContainer = styled.div``;
+export const TxnModeContainer = styled.div`
+  display: flex;
+  padding: 1rem;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 3.6rem;
+
+  box-shadow: var(--box-shadow-light);
+
+  & > * {
+    flex: 1;
+    color: var(--black-color);
+    min-width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    border-radius: 3.6rem;
+  }
+
+  & > .active {
+    background-image: var(--primary-gradient);
+    color: var(--black-color);
+  }
+`;
+
+
