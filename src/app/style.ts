@@ -10,6 +10,8 @@ export const DashBoardContainer = styled(MainContainer)`
 
   grid-template-rows: 1fr 10rem 1fr;
 
+  grid-template-columns: none;
+
   gap: ${() => ClampComponent(900, 1250, 2, 3)};
 `;
 
@@ -47,6 +49,7 @@ export const LastDashboardRow = styled.section`
   grid-template-rows: 10rem 1fr;
   & > * {
     box-shadow: var(--box-shadow-light);
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
     border-radius: ${() => ClampComponent(900, 1250, 1.1, 1.5)};
   }
 `;
@@ -62,8 +65,14 @@ export const MonthlyCardContainer = styled(FlexContainer)`
 
   padding: 0;
 
+  border-radius: 0%;
+
+  box-shadow: none;
+
   & > * {
     padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+    box-shadow: var(--box-shadow-light);
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.5)};
   }
 `;
 
