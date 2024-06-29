@@ -10,7 +10,7 @@ export const navData: {
   icon: typeof LuLayoutDashboard;
 }[] = [
   {
-    href: '/dashboard',
+    href: '/',
     content: 'Dashboard',
     icon: LuLayoutDashboard,
   },
