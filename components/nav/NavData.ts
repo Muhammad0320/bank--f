@@ -39,3 +39,4 @@ export const navData: {
     icon: MdOutlineAccountBalance,
   },
 ];
+

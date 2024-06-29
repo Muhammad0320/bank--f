@@ -38,6 +38,8 @@ export const LastDashboardRow = styled.section`
 
   display: grid;
 
+  gap: ${() => ClampComponent(900, 1250, 2, 3)};
+
   grid-template-columns: 1fr 1.2fr 1fr;
 
   grid-template-rows: 10rem 1fr;
