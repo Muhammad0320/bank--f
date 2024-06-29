@@ -36,6 +36,7 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'tiny' && ClampComponent(900, 1250, 0.8, 1.2)};
   gap: ${prop => prop.$size === 'unset' && '0'};
   justify-content: ${prop => prop.$size === 'btw' && 'space-between'};
+  align-items: ${prop => prop.$size === 'btw' && 'center'};
 
   /* align-items: center; */
 `;

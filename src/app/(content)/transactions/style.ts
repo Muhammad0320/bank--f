@@ -13,7 +13,7 @@ export const TransactionContainer = styled(MainContainer)`
 
   gap: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
 
-  & > * {
+  & > *:not(h2) {
     box-shadow: var(--box-shadow-light);
 
     border: 1px solid var(--border-color);
