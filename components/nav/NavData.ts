@@ -3,9 +3,12 @@ import { TbReportAnalytics } from 'react-icons/tb';
 import { LuLayoutDashboard } from 'react-icons/lu';
 import { CiCreditCard2 } from 'react-icons/ci';
 import { GrTransaction } from 'react-icons/gr';
-import { IconType } from 'react-icons';
 
-export const navData: { href: string; content: string; icon: IconType }[] = [
+export const navData: {
+  href: string;
+  content: string;
+  icon: typeof LuLayoutDashboard;
+}[] = [
   {
     href: '/dashboard',
     content: 'Dashboard',
