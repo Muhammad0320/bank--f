@@ -67,3 +67,14 @@ export const Piechart = styled(FlexContainer)`
   grid-row: 1 / -1;
   grid-column: 3 / -1;
 `;
+
+export const FlashTransaction = styled(FlexContainer)`
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+`;
+
+export const BalanceHistory = styled(FlexContainer)`
+  grid-row: 2 / 3;
+
+  grid-column: 2 /3;
+`;
