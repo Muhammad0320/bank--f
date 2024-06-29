@@ -25,7 +25,7 @@ const Page: React.FC = () => {
 
         <MonthlyCardContainer $flow="column" $size="medium" as={'section'}>
           <FlexContainer $flow="row" $size="btw">
-            <FlexContainer $flow="column" $size="tiny">
+            <FlexContainer $flow="column" $size="unset">
               <StyledH3> $45,000.00 </StyledH3>
               <Text> Income </Text>
               <Text $size="small"> +0.5% than last month </Text>
@@ -34,7 +34,7 @@ const Page: React.FC = () => {
             <IconContainer> PB </IconContainer>
           </FlexContainer>
           <FlexContainer $flow="row" $size="btw">
-            <FlexContainer $flow="column" $size="tiny">
+            <FlexContainer $flow="column" $size="unset">
               <StyledH3> $45,000.00 </StyledH3>
               <Text> Income </Text>
               <Text $size="small"> +0.5% than last month </Text>
@@ -43,7 +43,7 @@ const Page: React.FC = () => {
             <IconContainer> PB </IconContainer>
           </FlexContainer>
           <FlexContainer $flow="row" $size="btw">
-            <FlexContainer $flow="column" $size="tiny">
+            <FlexContainer $flow="column" $size="unset">
               <StyledH3> $45,000.00 </StyledH3>
               <Text> Income </Text>
               <Text $size="small"> +0.5% than last month </Text>
