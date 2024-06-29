@@ -62,3 +62,5 @@ export const TxnCard = styled(FlexContainer)`
 export const TxnContentContainer = styled.div`
   background-color: var(--text-color-dark);
 `;
+
+export const TxnModeContainer = styled.div``;
