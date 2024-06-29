@@ -18,11 +18,13 @@ export const DashBoardContainer = styled(MainContainer)`
 export const FirstDashBoardRow = styled.section`
   grid-row: 1 / 3;
 
+  grid-column: 1 / 3;
+
   display: grid;
 
   // Add code sharing with styled component in both comps
 
-  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-columns: 1.8fr 1fr 1.25fr;
 
   grid-template-rows: 1fr 10rem;
 
@@ -39,6 +41,7 @@ export const FirstDashBoardRow = styled.section`
 
 export const LastDashboardRow = styled.section`
   grid-row: 2 / -1;
+  grid-column: 1 / 3;
 
   display: grid;
 
