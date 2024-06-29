@@ -13,7 +13,7 @@ export const TransactionContainer = styled(MainContainer)`
 
   gap: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
 
-  & > *:not(h2) {
+  & > *:not(:first-child) {
     box-shadow: var(--box-shadow-light);
 
     border: 1px solid var(--border-color);
@@ -65,25 +65,28 @@ export const TxnContentContainer = styled.div`
 
 export const TxnModeContainer = styled.div`
   display: flex;
-  padding: 1rem;
+  /* padding: ; */
 
   border: 1px solid var(--border-color);
 
-  border-radius: 3.6rem;
+  border-radius: ${() => ClampComponent(900, 1250, 3, 3.6)};
+
+  font-size: 1rem;
 
   box-shadow: var(--box-shadow-light);
+
+  overflow: hidden;
 
   & > * {
     flex: 1;
     color: var(--black-color);
     min-width: fit-content;
-
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: 1.2rem;
     padding-block: 0.8rem;
-    border-radius: 3.6rem;
+    border-radius: inherit;
   }
 
   & > .active {

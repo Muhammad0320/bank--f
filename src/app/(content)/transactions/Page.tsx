@@ -11,6 +11,7 @@ import {
   TxnCardContainer,
   TxnContentContainer,
   TxnHistory,
+  TxnModeContainer,
 } from './style';
 
 const Tracsaction = () => {
@@ -19,7 +20,13 @@ const Tracsaction = () => {
       <StyledH2> Transaction </StyledH2>
 
       <TxnCardContainer>
-        <StyledH3> Transfer </StyledH3>
+        <FlexContainer $flow="row" $size="btw">
+          <StyledH3> Transfer </StyledH3>
+          <TxnModeContainer>
+            <span className="active"> Bank transfer </span>
+            <span> Credit Card </span>
+          </TxnModeContainer>
+        </FlexContainer>
 
         <TxnContentContainer>Shit !!!!</TxnContentContainer>
       </TxnCardContainer>
