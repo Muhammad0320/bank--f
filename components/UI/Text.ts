@@ -30,6 +30,8 @@ export const Text = styled.p<{ $size?: 'small' | 'large' }>`
 
   font-size: ${() => ClampComponent(900, 1250, 1.2, 1.5)};
 
+  text-align: left;
+
   ${props =>
     props.$size === 'small' &&
     css`

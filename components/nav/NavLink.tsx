@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import { FC, PropsWithChildren, ReactNode } from 'react';
-import { NavLinkContainer } from './NavStyles';
-import { IconContext, IconType } from 'react-icons';
+import { FC, PropsWithChildren } from 'react';
 import { FaHome } from 'react-icons/fa';
+import { NavLinkContainer } from './NavStyles';
 
 type NavLinkType = PropsWithChildren & {
   href: string;

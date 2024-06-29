@@ -37,7 +37,7 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'unset' && '0'};
   justify-content: ${prop => prop.$size === 'btw' && 'space-between'};
 
-  align-items: center;
+  /* align-items: center; */
 `;
 
 export const ImageContainer = styled.div`
@@ -63,18 +63,15 @@ export const StyledInput = styled.input`
 
     border: 1px solid var(--primary-gradient);
   }
-`;  
-
-
+`;
 
 export const AvatarContainer = styled.div`
   position: relative;
-
-  background-color: var(--text-color-dark);
 
   width: 3rem;
   height: 3rem;
 
   border-radius: 50%;
+  background-color: var(--text-color-dark);
 `;
 
