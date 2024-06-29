@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { MainContainer } from '../../styles/RootStyles';
 import { ClampComponent } from '../../styles/clampBuilder';
+import { FlexContainer } from '../../components/UI/uiStyles';
 
 export const DashBoardContainer = styled(MainContainer)`
   display: grid;
@@ -46,20 +47,23 @@ export const LastDashboardRow = styled.section`
   }
 `;
 
-export const BalaceSummary = styled.section`
+export const BalaceSummary = styled(FlexContainer)`
   grid-row: 1 / 3;
   grid-column: 1 / 2;
 `;
 
-export const MonthlyCardContainer = styled.section`
+export const MonthlyCardContainer = styled(FlexContainer)`
   grid-row: 1 / 3;
   grid-column: 2 / 3;
-
-  display: flex;
-
-  flex-flow: column;
-
-  gap: inherit;
 `;
 
+export const TopBeneficiary = styled(FlexContainer)`
+  grid-row: 1 / 2;
 
+  grid-column: 3 / -1;
+`;
+
+export const Piechart = styled(FlexContainer)`
+  grid-row: 1 / -1;
+  grid-column: 3 / -1;
+`;
