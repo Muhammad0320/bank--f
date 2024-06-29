@@ -2,8 +2,9 @@
 
 import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
+import Link from 'next/link';
 
-export const NavLinkContainer = styled.span`
+export const NavLinkContainer = styled(Link)`
   display: flex;
 
   justify-content: center;
