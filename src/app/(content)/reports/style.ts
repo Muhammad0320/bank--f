@@ -54,6 +54,7 @@ export const LastReportRow = styled(FlexContainer)`
   & > * {
     flex: 1;
     min-width: fit-content;
+
     padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};

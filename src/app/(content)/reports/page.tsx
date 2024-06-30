@@ -19,7 +19,7 @@ const Page: React.FC = () => {
       <FirstReportRow $flow="row" $size="inherit">
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> $12,00 </StyledH3>
             <Text> Avg. Trasnsaction </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -27,7 +27,7 @@ const Page: React.FC = () => {
         </FlexContainer>
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> $100 </StyledH3>
             <Text> Min. Trasnsaction </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -35,7 +35,7 @@ const Page: React.FC = () => {
         </FlexContainer>
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> $15,000 </StyledH3>
             <Text> Max. Trasnsaction </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -43,7 +43,7 @@ const Page: React.FC = () => {
         </FlexContainer>
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> 40 </StyledH3>
             <Text> Transactions </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -71,7 +71,7 @@ const Page: React.FC = () => {
       <LastReportRow $flow="row" $size="inherit">
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> $12,00 </StyledH3>
             <Text> Total Deposits </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -80,7 +80,7 @@ const Page: React.FC = () => {
 
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> 12 </StyledH3>
             <Text> Total Deposit </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -89,7 +89,7 @@ const Page: React.FC = () => {
 
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> $199 </StyledH3>
             <Text> Total withdrawal </Text>
             <Text $size="small"> +1.2% than last month </Text>
@@ -98,7 +98,7 @@ const Page: React.FC = () => {
 
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
-          <FlexContainer $flow="column" $size="tiny">
+          <FlexContainer $flow="column" $size="unset">
             <StyledH3> 50 </StyledH3>
             <Text> Total withdrawal </Text>
             <Text $size="small"> +1.2% than last month </Text>
