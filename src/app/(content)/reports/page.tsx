@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BalanceSummaryReport,
   FirstReportRow,
+  LastReportRow,
   MiddleReportRow,
   RecentTxnReport,
   ReportContainer,
@@ -65,6 +66,53 @@ const Page: React.FC = () => {
           <div> Recent Transaction... </div>
         </RecentTxnReport>
       </MiddleReportRow>
+
+      <LastReportRow $flow="row" $size="inherit">
+        <FlexContainer $flow="row" $size="small">
+          <IconContainer> I </IconContainer>
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH3> $12,00 </StyledH3>
+            <Text> Total Deposits Amount </Text>
+            <Text $size="small"> +1.2% than last month </Text>
+          </FlexContainer>
+        </FlexContainer>
+
+        <FlexContainer $flow="row" $size="small">
+          <IconContainer> I </IconContainer>
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH3> 12 </StyledH3>
+            <Text> Total Deposit Count </Text>
+            <Text $size="small"> +1.2% than last month </Text>
+          </FlexContainer>
+        </FlexContainer>
+
+        <FlexContainer $flow="row" $size="small">
+          <IconContainer> I </IconContainer>
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH3> $199 </StyledH3>
+            <Text> Total withdrawal Amount </Text>
+            <Text $size="small"> +1.2% than last month </Text>
+          </FlexContainer>
+        </FlexContainer>
+
+        <FlexContainer $flow="row" $size="small">
+          <IconContainer> I </IconContainer>
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH3> 50 </StyledH3>
+            <Text> Total withdrawal count </Text>
+            <Text $size="small"> +1.2% than last month </Text>
+          </FlexContainer>
+        </FlexContainer>
+
+        <FlexContainer $flow="row" $size="small">
+          <IconContainer> I </IconContainer>
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH3> $12,00 </StyledH3>
+            <Text> Total signins </Text>
+            <Text $size="small"> +1.2% than last month </Text>
+          </FlexContainer>
+        </FlexContainer>
+      </LastReportRow>
     </ReportContainer>
   );
 };
