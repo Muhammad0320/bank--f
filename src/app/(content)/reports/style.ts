@@ -28,6 +28,12 @@ export const FirstReportRow = styled(FlexContainer)`
   }
 `;
 
+
+export const SigninReport = styled(FlexContainer)`
+  grid-column: 5 / -1;
+  grid-row: 1 / 3;
+`;
+
 export const LastReportRow = styled(FlexContainer)`
   grid-column: 1 / 5;
 
