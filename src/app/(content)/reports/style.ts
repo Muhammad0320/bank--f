@@ -42,6 +42,22 @@ export const LastReportRow = styled(FlexContainer)`
 
     box-shadow: var(--box-shadow-light);
   }
-`;   
+`;
+
+export const MiddleReportRow = styled.section`
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: inherit;
+  grid-template-rows: repeat(2, 1fr);
+
+  & > * {
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+  }
+`;
 
 
