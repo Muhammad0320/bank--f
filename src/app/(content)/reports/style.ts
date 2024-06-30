@@ -61,3 +61,18 @@ export const MiddleReportRow = styled.section`
 `;
 
 
+export const BalanceSummaryReport = styled(FlexContainer)`
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+`;
+
+export const RecentTxnReport = styled(FlexContainer)`
+  grid-row: 2 / -1;
+
+  grid-column: 2 / -1;
+`;
+
+export const UpdatesReport = styled(FlexContainer)`
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+`;
