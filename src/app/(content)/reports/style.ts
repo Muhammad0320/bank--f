@@ -8,7 +8,6 @@ import { FlexContainer } from '../../../../components/UI/uiStyles';
 export const ReportContainer = styled(MainContainer)`
   display: grid;
 
-
   grid-template-columns: repeat(4, 1fr) 1.2fr;
 
   grid-template-rows: 1fr 3fr 1fr;
@@ -23,6 +22,8 @@ export const FirstReportRow = styled(FlexContainer)`
   gap: inherit;
 
   & > * {
+    flex: 1;
+    min-width: fit-content;
     padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
@@ -51,6 +52,8 @@ export const LastReportRow = styled(FlexContainer)`
   gap: inherit;
 
   & > * {
+    flex: 1;
+    min-width: fit-content;
     padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
