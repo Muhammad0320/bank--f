@@ -1,5 +1,12 @@
 import React from 'react';
-import { FirstReportRow, ReportContainer } from './style';
+import {
+  BalanceSummaryReport,
+  FirstReportRow,
+  MiddleReportRow,
+  RecentTxnReport,
+  ReportContainer,
+  UpdatesReport,
+} from './style';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
 import IconContainer from '../../../../components/UI/IconContainer';
 import { StyledH3, Text } from '../../../../components/UI/Text';
@@ -41,6 +48,23 @@ const Page: React.FC = () => {
           </FlexContainer>
         </FlexContainer>
       </FirstReportRow>
+
+      <MiddleReportRow>
+        <BalanceSummaryReport $flow="column" $size="small">
+          <StyledH3> Balance Report </StyledH3>
+          <div> Actual report... </div>
+        </BalanceSummaryReport>
+
+        <UpdatesReport $flow="column" $size="small">
+          <StyledH3> Updates </StyledH3>
+          <div> Updates... </div>
+        </UpdatesReport>
+
+        <RecentTxnReport $flow="column" $size="small">
+          <StyledH3> Recent Transactions </StyledH3>
+          <div> Recent Transaction... </div>
+        </RecentTxnReport>
+      </MiddleReportRow>
     </ReportContainer>
   );
 };
