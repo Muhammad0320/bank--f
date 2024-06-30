@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { MainContainer } from '../../../../styles/RootStyles';
 import { ClampComponent } from '../../../../styles/clampBuilder';
@@ -27,7 +29,6 @@ export const FirstReportRow = styled(FlexContainer)`
     box-shadow: var(--box-shadow-light);
   }
 `;
-
 
 export const SigninReport = styled(FlexContainer)`
   grid-column: 5 / -1;
@@ -65,7 +66,6 @@ export const MiddleReportRow = styled.section`
     box-shadow: var(--box-shadow-light);
   }
 `;
-
 
 export const BalanceSummaryReport = styled(FlexContainer)`
   grid-row: 1 / -1;

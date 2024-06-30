@@ -22,7 +22,7 @@ export const navData: {
   },
 
   {
-    href: '/report',
+    href: '/reports',
     content: 'Report',
     icon: TbReportAnalytics,
   },
