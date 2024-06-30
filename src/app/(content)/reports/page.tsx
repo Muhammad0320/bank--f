@@ -6,6 +6,7 @@ import {
   MiddleReportRow,
   RecentTxnReport,
   ReportContainer,
+  SigninReport,
   UpdatesReport,
 } from './style';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
@@ -113,6 +114,12 @@ const Page: React.FC = () => {
           </FlexContainer>
         </FlexContainer>
       </LastReportRow>
+
+      <SigninReport $flow="column" $size="small">
+        <StyledH3> Signins </StyledH3>
+
+        <div> Actual signin content </div>
+      </SigninReport>
     </ReportContainer>
   );
 };
