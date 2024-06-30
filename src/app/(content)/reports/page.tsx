@@ -105,14 +105,14 @@ const Page: React.FC = () => {
           </FlexContainer>
         </FlexContainer>
 
-        <FlexContainer $flow="row" $size="small">
+        {/* <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
           <FlexContainer $flow="column" $size="tiny">
             <StyledH3> $12,00 </StyledH3>
             <Text> Total signins </Text>
             <Text $size="small"> +1.2% than last month </Text>
           </FlexContainer>
-        </FlexContainer>
+        </FlexContainer> */}
       </LastReportRow>
 
       <SigninReport $flow="column" $size="small">
@@ -125,3 +125,4 @@ const Page: React.FC = () => {
 };
 
 export default Page;
+
