@@ -13,8 +13,8 @@ export const ReportContainer = styled(MainContainer)`
   gap: ${() => ClampComponent(900, 1250, 1.5, 3)};
 `;
 
-export const FirstReportRole = styled(FlexContainer)`
-  grid-row: 1/ 2;
+export const FirstReportRow = styled(FlexContainer)`
+  grid-row: 1/ -1;
   grid-column: 1 / 5;
 
   gap: inherit;
@@ -27,3 +27,21 @@ export const FirstReportRole = styled(FlexContainer)`
     box-shadow: var(--box-shadow-light);
   }
 `;
+
+export const LastReportRow = styled(FlexContainer)`
+  grid-column: 1 / 5;
+
+  grid-row: 3 / -1;
+
+  gap: inherit;
+
+  & > * {
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+  }
+`;   
+
+
