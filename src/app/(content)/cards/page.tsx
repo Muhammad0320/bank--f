@@ -62,18 +62,18 @@ const Page: React.FC = () => {
           <styledH4> Information </styledH4>
 
           <FlexContainer $flow="row" $size="btw">
-            <Text $size="small"> Card Balance </Text>
-            <Text $size="small"> $25,000 </Text>
+            <Text $size="small"> Provider </Text>
+            <Text $size="small"> Visa </Text>
           </FlexContainer>
 
           <FlexContainer $flow="row" $size="btw">
-            <Text $size="small"> Credit Limit </Text>
-            <Text $size="small"> $10,000 </Text>
+            <Text $size="small"> Status </Text>
+            <Text $size="small"> Active </Text>
           </FlexContainer>
 
           <FlexContainer $flow="row" $size="btw">
-            <Text $size="small"> Daily txn Limit </Text>
-            <Text $size="small"> $1000 </Text>
+            <Text $size="small"> Type </Text>
+            <Text $size="small"> Credit </Text>
           </FlexContainer>
         </FlexContainer>
       </CardContainer>
