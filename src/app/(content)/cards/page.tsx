@@ -8,7 +8,7 @@ import {
   CreditCard,
   RecentTransaction,
 } from './style';
-import { StyledH3, Text, styledH4 } from '../../../../components/UI/Text';
+import { StyledH3, Text, StyledH4 } from '../../../../components/UI/Text';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
 
 const Page: React.FC = () => {
@@ -59,7 +59,7 @@ const Page: React.FC = () => {
         </FlexContainer>
 
         <FlexContainer $flow="column" $size="tiny">
-          <styledH4> Information </styledH4>
+          <StyledH4> Information </StyledH4>
 
           <FlexContainer $flow="row" $size="btw">
             <Text $size="small"> Provider </Text>

@@ -25,12 +25,7 @@ export const StyledH3 = styled.h3`
   font-size: ${() => ClampComponent(900, 1250, 1.5, 2)};
 `;
 
-export const styledH4 = styled.h4`
-  color: var(--black-color);
-  font-weight: 500;
 
-  font-size: ${() => ClampComponent(900, 1250, 1.2, 1.7)};
-`;
 
 export const Text = styled.p<{ $size?: 'small' | 'large' }>`
   color: var(--black-color-light);
@@ -45,5 +40,13 @@ export const Text = styled.p<{ $size?: 'small' | 'large' }>`
       font-size: 400;
     `}
 `;
+
+export const styledH4 = styled.h4`
+  color: var(--black-color);
+  font-weight: 500;
+
+  font-size: ${() => ClampComponent(900, 1250, 1.2, 1.7)};
+`;
+
 
 
