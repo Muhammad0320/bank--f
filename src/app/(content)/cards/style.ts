@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { MainContainer } from '../../../../styles/RootStyles';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
@@ -12,8 +14,6 @@ export const CardComponentWrapper = styled(MainContainer)`
 export const CardContainer = styled(FlexContainer)`
   padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 `;
-
-
 
 export const CardOverviewContainer = styled.section`
   display: grid;

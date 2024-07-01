@@ -41,7 +41,7 @@ export const Text = styled.p<{ $size?: 'small' | 'large' }>`
     `}
 `;
 
-export const styledH4 = styled.h4`
+export const StyledH4 = styled.h4`
   color: var(--black-color);
   font-weight: 500;
 
