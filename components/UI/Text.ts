@@ -22,15 +22,20 @@ export const StyledH3 = styled.h3`
 
   font-weight: 500;
 
-  font-size: ${() => ClampComponent(900, 1250, 1.2, 2)};
+  font-size: ${() => ClampComponent(900, 1250, 1.5, 2)};
+`;
+
+export const styledH4 = styled.h4`
+  color: var(--black-color);
+  font-weight: 500;
+
+  font-size: ${() => ClampComponent(900, 1250, 1.2, 1.7)};
 `;
 
 export const Text = styled.p<{ $size?: 'small' | 'large' }>`
   color: var(--black-color-light);
 
   font-size: ${() => ClampComponent(900, 1250, 1.2, 1.5)};
-
-  text-align: left;
 
   ${props =>
     props.$size === 'small' &&
