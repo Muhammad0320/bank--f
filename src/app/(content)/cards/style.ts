@@ -33,7 +33,6 @@ export const CardOverviewContainer = styled.section`
   }
 `;
 
-
 export const CardExpence = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 1 /2;
@@ -48,4 +47,14 @@ export const RecentTransaction = styled(FlexContainer)`
   grid-column: 1 / -1;
 
   grid-row: 2 / -1;
+`;
+
+export const CreditCard = styled.div`
+  border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+  box-shadow: var(--box-shadow-light);
+
+  padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
+  aspect-ratio: 16 / 9;
 `;
