@@ -56,5 +56,7 @@ export const CreditCard = styled.div`
 
   padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 
+  width: 15rem;
+
   aspect-ratio: 16 / 9;
 `;

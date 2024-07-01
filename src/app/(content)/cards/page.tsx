@@ -32,7 +32,6 @@ const Page: React.FC = () => {
       </CardOverviewContainer>
 
       <CardContainer $flow="column" $size="small">
-        <StyledH3> My Cards </StyledH3>
         <CreditCard>Visa</CreditCard>
 
         <FlexContainer $flow="column" $size="tiny">
