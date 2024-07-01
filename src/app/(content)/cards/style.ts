@@ -12,3 +12,23 @@ export const CardComponentWrapper = styled(MainContainer)`
 export const CardContainer = styled(FlexContainer)`
   padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 `;
+
+
+
+export const CardOverviewContainer = styled.section`
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-rows: 1fr 1.5fr;
+
+  gap: ${() => ClampComponent(900, 1250, 1.5, 3)};
+
+  & > * {
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
+`;
