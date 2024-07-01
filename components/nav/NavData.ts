@@ -17,7 +17,7 @@ export const navData: {
 
   {
     href: '/transactions',
-    content: 'Tracsaction',
+    content: 'Transaction',
     icon: GrTransaction,
   },
 
@@ -28,8 +28,8 @@ export const navData: {
   },
 
   {
-    href: '/card',
-    content: 'Card',
+    href: '/cards',
+    content: 'Cards',
     icon: CiCreditCard2,
   },
 
