@@ -32,3 +32,20 @@ export const CardOverviewContainer = styled.section`
     padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
   }
 `;
+
+
+export const CardExpence = styled(FlexContainer)`
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+`;
+
+export const CardAnalytics = styled(FlexContainer)`
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+`;
+
+export const RecentTransaction = styled(FlexContainer)`
+  grid-column: 1 / -1;
+
+  grid-row: 2 / -1;
+`;
