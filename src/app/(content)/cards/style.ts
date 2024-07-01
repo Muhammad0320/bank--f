@@ -9,10 +9,14 @@ export const CardComponentWrapper = styled(MainContainer)`
   display: grid;
 
   grid-template-columns: 1fr auto;
+
+  gap: ${() => ClampComponent(900, 1250, 1, 1.5)};
 `;
 
 export const CardContainer = styled(FlexContainer)`
-  padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  padding-inline: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
+  background-color: aliceblue;
 `;
 
 export const CardOverviewContainer = styled.section`
