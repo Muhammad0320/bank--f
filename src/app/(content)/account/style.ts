@@ -15,14 +15,37 @@ export const AccountContainer = styled(MainContainer)`
   gap: ${() => ClampComponent(900, 1250, 1.5, 2)};
 `;
 
-export const CardDetailsComponent = styled(FlexContainer)`
+export const AccountDetailsComponent = styled(FlexContainer)`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
 
   padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+
+  & > * {
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
+`;
+
+export const AccountOverviewContainer = styled.section`
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  & > * {
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
 `;
 
 export const AccountBalanceContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 `;
+
+
