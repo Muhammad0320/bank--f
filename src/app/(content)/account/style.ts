@@ -49,3 +49,12 @@ export const AccountBalanceContainer = styled(FlexContainer)`
 `;
 
 
+export const AccountExpenceContainrt = styled(FlexContainer)`
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+`;
+
+export const AccountFooterContainrr = styled(FlexContainer)`
+  grid-column: 1 / 2;
+  grid-row: 3 / -1;
+`;
