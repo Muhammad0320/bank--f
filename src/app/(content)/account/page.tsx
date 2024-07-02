@@ -1,7 +1,8 @@
 import IconContainer from '../../../../components/UI/IconContainer';
-import { Text } from '../../../../components/UI/Text';
+import { StyledH4, Text } from '../../../../components/UI/Text';
 import { FlexContainer } from '../../../../components/UI/uiStyles';
 import {
+  AccountBalanceContainer,
   AccountContainer,
   AccountDetailsComponent,
   AccountOverviewContainer,
@@ -10,7 +11,18 @@ import {
 const AccountPage = () => {
   return (
     <AccountContainer>
-      <AccountOverviewContainer></AccountOverviewContainer>
+      <AccountOverviewContainer>
+        <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
+          <FlexContainer $flow="row" $size="small" as="li">
+            <IconContainer> I </IconContainer>
+
+            <FlexContainer $flow="column" $size="tiny">
+              <StyledH4> Total Balance </StyledH4>
+              <Text> $1,200,000 </Text>
+            </FlexContainer>
+          </FlexContainer>
+        </AccountBalanceContainer>
+      </AccountOverviewContainer>
 
       <AccountDetailsComponent as="section" $flow="column" $size="small">
         <FlexContainer $flow="column" $size="tiny">
