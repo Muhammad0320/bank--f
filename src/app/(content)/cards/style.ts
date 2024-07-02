@@ -10,7 +10,7 @@ export const CardComponentWrapper = styled(MainContainer)`
 
   grid-template-columns: 1fr auto;
 
-  gap: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  gap: ${() => ClampComponent(900, 1250, 1.5, 2)};
 `;
 
 export const CardContainer = styled(FlexContainer)`
