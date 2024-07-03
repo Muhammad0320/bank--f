@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export const useLocalStorageState = (initialState: boolean, key: string) => {
-  const [value, setValue] = useState<{ isDarkMode: boolean }>(function () {
+  const [value, setValue] = useState<boolean>(function () {
     const storageItem = localStorage.getItem(key);
 
     return storageItem ? JSON.parse(storageItem) : initialState;
