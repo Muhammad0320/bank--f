@@ -21,3 +21,4 @@ export const MainContainer = styled.main`
   padding-block: ${() => ClampComponent(900, 1250, 2.5, 3.5)};
   padding-inline: ${() => ClampComponent(900, 1250, 2, 3)};
 `;
+
