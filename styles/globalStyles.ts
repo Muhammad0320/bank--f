@@ -91,46 +91,6 @@ inherits: false;
 } 
 
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; 
-  
-  overflow: auto;
-}
-
-
-
-.flex-container {
- flex-grow: 1;
-
-
-}
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--text-color);
-  background-color: var(--color-white-1);
-  min-height: 100dvh;
-  max-width: 100dvw;
-  overflow-x: hidden;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  box-sizing: border-box;
-}
-
-input,
-textarea,
-button{
-  font: inherit;
-  color: inherit;
-}
-
-
-
-
 /* ::-webkit-scrollbar-thumb {
   
   background: var( --color-primary-muted ); 
@@ -171,6 +131,49 @@ button{
   border-radius: 100vw;
 
 } */
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; 
+  
+  overflow: auto;
+}
+
+
+
+.flex-container {
+ flex-grow: 1;
+
+
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--color-white-1);
+  min-height: 100dvh;
+  max-width: 100dvw;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+button{
+  font: inherit;
+  color: inherit;
+}
+
+
+
 
 button {
   cursor: pointer;
