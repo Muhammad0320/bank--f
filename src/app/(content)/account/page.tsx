@@ -7,12 +7,9 @@ import {
   AccountDetailsComponent,
   AccountExpenceContainer,
   AccountFooterContainer,
-  AccountOverviewContainer,
 } from './style';
 
 const AccountPage = () => {
-
-
   return (
     <AccountContainer>
       <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
@@ -63,9 +60,7 @@ const AccountPage = () => {
       <AccountDetailsComponent as="section" $flow="column" $size="small">
         <FlexContainer $flow="column" $size="tiny">
           <Text> Income </Text>
-          <FlexContainer $flow="row" $size="tiny">
-            <IconContainer> I </IconContainer>
-
+          <FlexContainer $flow="column" $size="tiny">
             <Text> $12,000 </Text>
 
             <div>I m gonna be the graph</div>
@@ -74,9 +69,7 @@ const AccountPage = () => {
 
         <FlexContainer $flow="column" $size="tiny">
           <Text> Expence </Text>
-          <FlexContainer $flow="row" $size="tiny">
-            <IconContainer> I </IconContainer>
-
+          <FlexContainer $flow="column" $size="tiny">
             <Text> $12,000 </Text>
 
             <div>I m gonna be the graph</div>
