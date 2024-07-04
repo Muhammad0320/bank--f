@@ -28,7 +28,7 @@ export const AccountDetailsComponent = styled(FlexContainer)`
   }
 `;
 
-export const AccountOverviewContainer = styled.section`
+export const AccountOverviewContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 

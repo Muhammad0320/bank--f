@@ -16,7 +16,52 @@ const AccountPage = () => {
 
   return (
     <AccountContainer>
-      <AccountOverviewContainer>
+      <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
+        <FlexContainer $flow="row" $size="small" as="li">
+          <IconContainer> I </IconContainer>
+
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH4> Total account Balance </StyledH4>
+            <Text> $1,200,000 </Text>
+          </FlexContainer>
+        </FlexContainer>
+        <FlexContainer $flow="row" $size="small" as="li">
+          <IconContainer> I </IconContainer>
+
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH4> Saving Account Balance </StyledH4>
+            <Text> $500,000 </Text>
+          </FlexContainer>
+        </FlexContainer>
+        <FlexContainer $flow="row" $size="small" as="li">
+          <IconContainer> I </IconContainer>
+
+          <FlexContainer $flow="column" $size="tiny">
+            <StyledH4> Current Account Balance </StyledH4>
+            <Text> $700,000 </Text>
+          </FlexContainer>
+        </FlexContainer>
+      </AccountBalanceContainer>
+
+      <AccountExpenceContainer $flow="column" $size="small" as={'section'}>
+        <StyledH3> Account Expence </StyledH3>
+
+        <div>I m gonna be the graph</div>
+      </AccountExpenceContainer>
+
+      <AccountFooterContainer>
+        <FlexContainer $flow="column" $size="small">
+          <StyledH4> Any suspicious movement? </StyledH4>
+          <div> buttons </div>
+        </FlexContainer>
+
+        <FlexContainer $flow="column" $size="small">
+          <StyledH4> Beneficiaries? </StyledH4>
+          <div> buttongs </div>
+        </FlexContainer>
+      </AccountFooterContainer>
+
+      {/* <AccountOverviewContainer $flow="column" $size="inherit" as="sectiton">
         <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
           <FlexContainer $flow="row" $size="small" as="li">
             <IconContainer> I </IconContainer>
@@ -61,7 +106,7 @@ const AccountPage = () => {
             <div> buttongs </div>
           </FlexContainer>
         </AccountFooterContainer>
-      </AccountOverviewContainer>
+      </AccountOverviewContainer> */}
 
       <AccountDetailsComponent as="section" $flow="column" $size="small">
         <FlexContainer $flow="column" $size="tiny">
