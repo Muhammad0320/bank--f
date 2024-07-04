@@ -19,8 +19,6 @@ export const AccountDetailsComponent = styled(FlexContainer)`
   grid-column: 2 / -1;
   grid-row: 1 / -1;
 
-  padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
-
   & > * {
     border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
 
@@ -34,13 +32,9 @@ export const AccountOverviewContainer = styled.section`
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 
-  & > * {
-    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+  /* display: grid;
 
-    box-shadow: var(--box-shadow-light);
-
-    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
-  }
+  grid-template-columns: auto auto auto; */
 `;
 
 export const AccountBalanceContainer = styled(FlexContainer)`
