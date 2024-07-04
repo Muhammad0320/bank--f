@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { ClampComponent } from '../../styles/clampBuilder';
 
 export const StyledIConContainer = styled.span`
-  height: ${() => ClampComponent(900, 1250, 3, 4.5)};
+  height: ${() => ClampComponent(900, 1250, 3, 4)};
   width: ${() => ClampComponent(900, 1250, 3, 4.5)};
 
   margin-block: auto;
@@ -42,6 +42,10 @@ export const FlexContainer = styled.div<{
   gap: ${prop => prop.$size === 'inherit' && 'inherit'};
   justify-content: ${prop => prop.$size === 'btw' && 'space-between'};
   align-items: ${prop => prop.$size === 'btw' && 'center'};
+
+  /* &:first-child:has(svg) {
+    width: max-content;
+  } */
 `;
 
 export const ImageContainer = styled.div`

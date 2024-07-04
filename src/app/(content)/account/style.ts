@@ -54,13 +54,11 @@ export const AccountExpenceContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 
-  div {
-    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+  border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
 
-    box-shadow: var(--box-shadow-light);
+  box-shadow: var(--box-shadow-light);
 
-    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
-  }
+  padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
 `;
 
 export const AccountFooterContainer = styled.div`
