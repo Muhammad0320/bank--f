@@ -133,6 +133,18 @@ inherits: false;
 } */
 
 
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  /* Creating animations for dark mode */
+  transition: background-color 0.3s, border 0.3s;
+}
+
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; 
@@ -156,6 +168,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
+  transition: color 0.3s, background-color 0.3s;
   background-color: var(--color-white-1);
   min-height: 100dvh;
   max-width: 100dvw;
@@ -193,7 +206,15 @@ input:disabled {
 
 
 
-input:focus {
+button:has(svg) {
+  line-height: 0;
+}
+
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
 
   --lightness: 20%;
   outline: 2px solid var(--primary-color);
@@ -227,7 +248,16 @@ img {
   max-width: 100%;
   border-radius: 1rem;
  
+};
+
+
+img {
+  max-width: 100%;
+
+  /* For dark mode */
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
+
 
 
 
