@@ -16,7 +16,7 @@ const AccountPage = () => {
 
   return (
     <AccountContainer>
-      <AccountOverviewContainer as="section" $flow="column" $size="inherit">
+      <AccountOverviewContainer>
         <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
           <FlexContainer $flow="row" $size="small" as="li">
             <IconContainer> I </IconContainer>
@@ -50,7 +50,7 @@ const AccountPage = () => {
           <div>I m gonna be the graph</div>
         </AccountExpenceContainer>
 
-        <AccountFooterContainer $flow="row" $size="inherit" as="section">
+        <AccountFooterContainer>
           <FlexContainer $flow="column" $size="small">
             <StyledH4> Any suspicious movement? </StyledH4>
             <div> buttons </div>
@@ -76,7 +76,7 @@ const AccountPage = () => {
         </FlexContainer>
 
         <FlexContainer $flow="column" $size="tiny">
-          <Text> Income </Text>
+          <Text> Expence </Text>
           <FlexContainer $flow="row" $size="tiny">
             <IconContainer> I </IconContainer>
 
