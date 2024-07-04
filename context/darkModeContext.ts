@@ -1,4 +1,4 @@
-import { createContext, ReactNode } from 'react';
+import { createContext, type ReactNode } from 'react';
 import { useLocalStorageState } from '../hooks/useLocalStorageState';
 
 interface DarkModeType {
@@ -8,34 +8,27 @@ interface DarkModeType {
 
 const DarkModeContext = createContext<DarkModeType | null>(null);
 
+export const DarkModeContextProvider = ({
+  children,
+}: {
+  children: ReactNode;
+}) => {
+  const [isDarkMode, setIsDarkMode] = useLocalStorageState(false, 'isDarkMode');
 
+  if (typeof setIsDarkMode !== 'function') return;
 
+  if (typeof isDarkMode !== 'boolean') return;
 
-export const DarkModeContextProvider = ({children: ReactNode}) => {
-    
-    const [ isDarkMode, setIsDarkMode ] = useLocalStorageState(false, 'isDarkMode');
+  const toggleDarkMode = () => setIsDarkMode(mode => !mode);
 
-    if(typeof setIsDarkMode !== 'function')  return 
+  const value: DarkModeType = {
+    isDarkMode,
+    toggleDarkMode,
+  };
 
-    if(typeof isDarkMode !== 'boolean') return
-
-      const toggleDarkMode = ( ) => setIsDarkMode(mode => !mode);
-
-
-      const value: DarkModeType = {
-
-        isDarkMode,
-        toggleDarkMode
-
-
-      }
-
-
-      
-  
-      return <DarkModeContext.Provider> 
-                
-      </DarkModeContext.Provider>
-
-
+  return (
+    <DarkModeContext.Provider value={value}>
+      {children}
+    </DarkModeContext.Provider>
+  );
 };
