@@ -87,7 +87,7 @@ export const TxnModeContainer = styled.div`
     padding-inline: 1.2rem;
     padding-block: 0.8rem;
     border-radius: inherit;
-  }
+  } 
 
   & > .active {
     background-image: var(--primary-gradient);

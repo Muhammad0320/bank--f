@@ -13,6 +13,6 @@ export const useLocalStorageState = (initialState: boolean, key: string) => {
     },
     [value, key]
   );
-
+  
   return [value, setValue];
 };

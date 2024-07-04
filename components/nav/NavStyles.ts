@@ -38,7 +38,6 @@ export const StyledNavLinks = styled.nav`
 `;
 
 
-
 export const StyledSidebar = styled.aside`
   grid-column: 1 / 1;
   grid-row: 2 / -1;
