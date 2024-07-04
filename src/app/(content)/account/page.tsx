@@ -11,9 +11,12 @@ import {
 } from './style';
 
 const AccountPage = () => {
+
+
+
   return (
     <AccountContainer>
-      <AccountOverviewContainer>
+      <AccountOverviewContainer as="section" $flow="column" $size="inherit">
         <AccountBalanceContainer $flow="row" $size="inherit" as="ul">
           <FlexContainer $flow="row" $size="small" as="li">
             <IconContainer> I </IconContainer>

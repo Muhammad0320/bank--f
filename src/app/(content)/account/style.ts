@@ -10,7 +10,7 @@ export const AccountContainer = styled(MainContainer)`
 
   grid-template-columns: 2.5fr 1fr;
 
-  grid-template-columns: auto repeat(2, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
 
   gap: ${() => ClampComponent(900, 1250, 1.5, 2)};
 `;
@@ -46,8 +46,15 @@ export const AccountOverviewContainer = styled.section`
 export const AccountBalanceContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-`;
 
+  & > * {
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
+`;
 
 export const AccountExpenceContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
@@ -57,4 +64,12 @@ export const AccountExpenceContainer = styled(FlexContainer)`
 export const AccountFooterContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
   grid-row: 3 / -1;
+
+  & > * {
+    border-radius: ${() => ClampComponent(900, 1250, 1, 1.4)};
+
+    box-shadow: var(--box-shadow-light);
+
+    padding: ${() => ClampComponent(900, 1250, 1, 1.5)};
+  }
 `;
