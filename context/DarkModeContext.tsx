@@ -8,11 +8,7 @@ interface DarkModeType {
 
 const DarkModeContext = createContext<DarkModeType | null>(null);
 
-export const DarkModeContextProvider = ({
-  children,
-}: {
-  children: ReactNode;
-}) => {
+export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useLocalStorageState(false, 'isDarkMode');
 
   if (typeof setIsDarkMode !== 'function') return;
@@ -28,7 +24,8 @@ export const DarkModeContextProvider = ({
 
   return (
     <DarkModeContext.Provider value={value}>
-      {children}
+      {' '}
+      {children}{' '}
     </DarkModeContext.Provider>
   );
 };
