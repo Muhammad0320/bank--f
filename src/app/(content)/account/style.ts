@@ -28,12 +28,7 @@ export const AccountDetailsComponent = styled(FlexContainer)`
   }
 `;
 
-export const AccountOverviewContainer = styled(FlexContainer)`
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
 
-  gap: ${() => ClampComponent(900, 1250, 1.5, 2)};
-`;
 
 export const AccountBalanceContainer = styled(FlexContainer)`
   grid-column: 1 / 2;
