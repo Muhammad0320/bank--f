@@ -28,13 +28,13 @@ const Tracsaction = () => {
           </TxnModeContainer>
         </FlexContainer>
 
-        <TxnContentContainer>Shit !!!!</TxnContentContainer>
+        <TxnContentContainer> Placeholder !!!!</TxnContentContainer>
       </TxnCardContainer>
 
       <TxnAnalysis>
         <StyledH3> Analysis </StyledH3>
 
-        <TxnContentContainer>Shit !!!!</TxnContentContainer>
+        <TxnContentContainer> PlaceHolder </TxnContentContainer>
       </TxnAnalysis>
 
       <TxnHistory>
