@@ -28,7 +28,7 @@ const Tracsaction = () => {
           </TxnModeContainer>
         </FlexContainer>
 
-        <TxnContentContainer> Placeholder !!!!</TxnContentContainer>
+        <TxnContentContainer> Placeholder </TxnContentContainer>
       </TxnCardContainer>
 
       <TxnAnalysis>
