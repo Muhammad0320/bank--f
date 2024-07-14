@@ -16,7 +16,7 @@ import { StyledH3, Text } from '../../../../components/UI/Text';
 const Page: React.FC = () => {
   return (
     <ReportContainer>
-      <FirstReportRow $flow="row" $size="inherit">
+      <FirstReportRow $flow="row" $size="inherit" style={{ flex: '1' }}>
         <FlexContainer $flow="row" $size="small">
           <IconContainer> I </IconContainer>
           <FlexContainer $flow="column" $size="unset">
