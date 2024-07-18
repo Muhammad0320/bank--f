@@ -5,6 +5,7 @@ import { UserStatus } from '../utils/enums';
 import { UserUpdatesObj } from '../utils/types';
 import { redirect } from 'next/navigation';
 import { revalidatePath, revalidateTag } from 'next/cache';
+import { formDataConverter } from '../utils/formatter';
 
 const UserSchema = z.object({
   name: z.string({ message: 'Invalid name format' }),
@@ -28,8 +29,12 @@ export type User = FormSchema & {
 };
 
 export const signupAction = (prevState: any, formData: FormData) => {
-  const user = UserSchema.parse(formData);
+  const parsedData = formDataConverter<FormSchema>(formData);
 
-  revalidateTag('signup');
-  redirect('/');
+  const user = UserSchema.parse(parsedData);
+
+  console.log(user);
+
+  // revalidateTag('signup');
+  // redirect('/');
 };
