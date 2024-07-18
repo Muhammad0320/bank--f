@@ -30,9 +30,14 @@ export type User = FormSchema & {
 export const signupAction = (prevState: any, formData: FormData) => {
   const parsedData = formDataConverter<FormSchema>(formData);
 
-  const user = UserSchema.parse(parsedData);
+  const user = UserSchema.safeParse(parsedData);
 
   console.log(user);
+
+  if (!user.success) {
+    throw new Error('Something has gone wrong');
+  }
+
 
   console.log('It reached here');
 
