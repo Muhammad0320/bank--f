@@ -1,7 +1,7 @@
 import { useFormState } from 'react-dom';
-import Input from '../../../../../components/UI/Input';
 import { signupAction } from '../../../../../actions/auth';
-import { FormErrorObj } from '../../../../../utils/types';
+import Input from '../../../../../components/UI/Input';
+import Button from '../../../../../components/UI/Button';
 
 const FormPage = () => {
   const initialState: any = { message: [] };
@@ -16,6 +16,8 @@ const FormPage = () => {
         <Input id="password" label=" password" type="password" />
         <Input id="passwordConfirm" label="password confirm" type="password" />
         <Input id="phone" label="phone" type="number" />
+
+        <Button pending="Submitting"> Submit </Button>
       </form>
     </div>
   );
