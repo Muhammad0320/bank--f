@@ -1,3 +1,5 @@
+'use client';
+
 import { useFormState } from 'react-dom';
 import { signupAction } from '../../../../../actions/auth';
 import Input from '../../../../../components/UI/Input';
@@ -6,7 +8,7 @@ import Button from '../../../../../components/UI/Button';
 const FormPage = () => {
   const initialState: any = { message: [] };
 
-  const [formAction, state] = useFormState(signupAction, initialState);
+  const [state, formAction] = useFormState(signupAction, initialState);
 
   return (
     <div>

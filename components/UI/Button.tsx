@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentPropsWithRef, ReactNode } from 'react';
 import { useFormStatus } from 'react-dom';
 

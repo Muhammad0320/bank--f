@@ -13,7 +13,6 @@ const UserSchema = z.object({
   phone: z.number().min(13, 'Invalid phone format'),
   password: z.string().min(8, 'Password too short'),
   passwordConfirm: z.string(),
-  avatar: z.any(),
 });
 
 export type FormSchema = z.infer<typeof UserSchema>;
@@ -23,7 +22,7 @@ export type User = FormSchema & {
   version: number;
   createdAt: Date;
   status: UserStatus;
-  avatar: string;
+  avatar?: string;
   signinTimeStamps: Date[];
   updates: UserUpdatesObj[];
 };
@@ -35,6 +34,10 @@ export const signupAction = (prevState: any, formData: FormData) => {
 
   console.log(user);
 
+  console.log('It reached here');
+
   // revalidateTag('signup');
   // redirect('/');
 };
+
+

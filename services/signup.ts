@@ -23,6 +23,8 @@ import { rootUrl } from '../utils/variable';
 
    const data = (await res.json()) as User;
 
+   console.log(data, 'from the signup api ');
+
    return data;
  };
 
