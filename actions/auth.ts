@@ -1,3 +1,5 @@
+'use server';
+
 import z from 'zod';
 import { UserStatus } from '../utils/enums';
 import { UserUpdatesObj } from '../utils/types';
@@ -13,17 +15,17 @@ const UserSchema = z.object({
   avatar: z.any(),
 });
 
- export type FormSchema = z.infer<typeof UserSchema>;
+export type FormSchema = z.infer<typeof UserSchema>;
 
- type User = FormSchema & {
-   id: string;
-   version: number;
-   createdAt: Date;
-   status: UserStatus;
-   avatar: string;
-   signinTimeStamps: Date[];
-   updates: UserUpdatesObj[];
- };
+type User = FormSchema & {
+  id: string;
+  version: number;
+  createdAt: Date;
+  status: UserStatus;
+  avatar: string;
+  signinTimeStamps: Date[];
+  updates: UserUpdatesObj[];
+};
 
 export const signupAction = (prevState: any, formData: FormData) => {
   const user = UserSchema.parse(formData);
@@ -31,4 +33,3 @@ export const signupAction = (prevState: any, formData: FormData) => {
   revalidatePath('/');
   redirect('/');
 };
-
