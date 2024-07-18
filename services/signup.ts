@@ -1,19 +1,28 @@
 import { FormSchema, User } from '../actions/auth';
 import { rootUrl } from '../utils/variable';
 
-const signupApi: (data: FormSchema) => Promise<User> = async (
-  formData: FormSchema
-) => {
-  const res = await fetch(`${rootUrl}/signup`, {
-    method: 'Post',
-    body: JSON.stringify(formData),
-    next: {
-      tags: ['signup'],
-    },
-  });
+ export const signupApi: (data: FormSchema) => Promise<User> = async (
+   formData: FormSchema
+ ) => {
+   const res = await fetch(`${rootUrl}/signup`, {
+     method: 'Post',
+     body: JSON.stringify(formData),
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     next: {
+       tags: ['signup'],
+     },
+   });
 
-  console.log(res.json);
-  if (!res.ok) throw new Error('Something went wrong');
+   if (!res.ok) {
+     console.log(res);
 
-  // let data = JSON.parse( res.json )
-};
+     throw new Error('Something went wrong');
+   }
+
+   const data = (await res.json()) as User;
+
+   return data;
+ };
+

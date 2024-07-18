@@ -260,7 +260,6 @@ img {
 
 
 
-
 `;
 
 export default GlobalStyles;
