@@ -13,15 +13,17 @@ const UserSchema = z.object({
   avatar: z.any(),
 });
 
-type User = z.infer<typeof UserSchema> & {
-  id: string;
-  version: number;
-  createdAt: Date;
-  status: UserStatus;
-  avatar: string;
-  signinTimeStamps: Date[];
-  updates: UserUpdatesObj[];
-};
+ export type FormSchema = z.infer<typeof UserSchema>;
+
+ type User = FormSchema & {
+   id: string;
+   version: number;
+   createdAt: Date;
+   status: UserStatus;
+   avatar: string;
+   signinTimeStamps: Date[];
+   updates: UserUpdatesObj[];
+ };
 
 export const signupAction = (prevState: any, formData: FormData) => {
   const user = UserSchema.parse(formData);
