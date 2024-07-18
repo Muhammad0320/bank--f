@@ -7,3 +7,7 @@ export type UserUpdatesObj = {
 
   updatedField: string;
 };
+
+
+export type FormErrorObj = Record<string, string>;
+
