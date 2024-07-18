@@ -23,7 +23,7 @@ type User = z.infer<typeof UserSchema> & {
   updates: UserUpdatesObj[];
 };
 
-export const signupApi = (prevState: any, formData: FormData) => {
+export const signupAction = (prevState: any, formData: FormData) => {
   const user = UserSchema.parse(formData);
 
   revalidatePath('/');
