@@ -1,6 +1,8 @@
 import z from 'zod';
 import { UserStatus } from '../utils/enums';
 import { UserUpdatesObj } from '../utils/types';
+import { redirect } from 'next/navigation';
+import { revalidatePath } from 'next/cache';
 
 const UserSchema = z.object({
   name: z.string({ message: 'Invalid name format' }),
@@ -21,4 +23,10 @@ type User = z.infer<typeof UserSchema> & {
   updates: UserUpdatesObj[];
 };
 
-export const signupApi = () => {};
+export const signupApi = (prevState: any, formData: FormData) => {
+  const user = UserSchema.parse(formData);
+
+  revalidatePath('/');
+  redirect('/');
+};
+
