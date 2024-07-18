@@ -1,4 +1,5 @@
 import z from 'zod';
+import { UserStatus, UserUpdatesObj } from '../utils/enums';
 
 const UserSchema = z.object({
   name: z.string({ message: 'Invalid name format' }),
@@ -9,8 +10,15 @@ const UserSchema = z.object({
   avatar: z.any(),
 });
 
+type User = z.infer<typeof UserSchema> & {
+  id: string;
+  version: number;
+  createdAt: Date;
+  status: UserStatus;
+  avatar: string;
+  signinTimeStamps: Date[];
 
-
-type User = z.infer<typeof UserSchema>;
+  updates: UserUpdatesObj[];
+};
 
 export const signupApi = () => {};
