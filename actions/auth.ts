@@ -6,6 +6,7 @@ import { UserUpdatesObj } from '../utils/types';
 import { redirect } from 'next/navigation';
 import { revalidatePath, revalidateTag } from 'next/cache';
 import { formDataConverter } from '../utils/formatter';
+import { signupApi } from '../services/signup';
 
 const UserSchema = z.object({
   name: z.string({ message: 'Invalid name format' }),
@@ -27,7 +28,7 @@ export type User = FormSchema & {
   updates: UserUpdatesObj[];
 };
 
-export const signupAction = (prevState: any, formData: FormData) => {
+export const signupAction = async (prevState: any, formData: FormData) => {
   const parsedData = formDataConverter<FormSchema>(formData);
 
   const user = UserSchema.safeParse(parsedData);
@@ -38,6 +39,9 @@ export const signupAction = (prevState: any, formData: FormData) => {
     throw new Error('Something has gone wrong');
   }
 
+  const data = await signupApi(user.data);
+
+  console.log(data);
 
   console.log('It reached here');
 
