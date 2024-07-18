@@ -6,4 +6,5 @@ export function formDataConverter<T>(formData: FormData): T {
   });
 
   return obj as T;
-}
+};
+
