@@ -1,1 +1,1 @@
-export const rootUrl = 'http://banking.dev/api/v1';
+export const rootUrl = 'https://banking.dev/api/v1';
